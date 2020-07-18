@@ -1,0 +1,7 @@
+@import "./mixins/_font-face.scss"; // импорт миксина
+
+// @include  - команда использования миксина
+// font-face - название миксина
+// в скобках (название шрифта, путь к шрифту, font-weight)
+
+// @include font-face("Inter", "../fonts/inter-bold/Inter-Bold", bold);
