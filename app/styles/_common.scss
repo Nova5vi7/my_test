@@ -9,3 +9,176 @@ h6,
 p {
   margin: 0;
 }
+
+body {
+  * {
+    outline: none !important;
+  }
+}
+
+.logo {
+  font-size: 36px;
+  letter-spacing: 2px;
+  line-height: 48px;
+  color: $black;
+  font-weight: $bold;
+  font-family: $myriad-pro;
+  transition: all 0.3s ease;
+  &:hover {
+    color: $light-gray;
+  }
+}
+
+.header-nav-hover,
+.header-nav,
+.contact-nav {
+  font-size: 12px;
+  letter-spacing: 0px;
+}
+.header-nav-hover,
+.header-nav {
+  text-align: right;
+}
+
+.header-nav {
+  line-height: 15px;
+  color: $black;
+  font-weight: $light;
+  font-family: $aleo;
+}
+
+.header-nav-hover {
+  line-height: 30px;
+  color: $black;
+  font-weight: $regular;
+  font-family: $roboto;
+}
+
+.contact-nav {
+  line-height: 15px;
+  color: $black;
+  font-weight: $light;
+  font-family: $aleo;
+}
+
+.footer-nav {
+  font-size: 14px;
+  line-height: 27px;
+  color: $light-gray;
+  font-weight: $light;
+  font-family: $roboto;
+}
+
+.main-title {
+  font-size: 85px;
+  letter-spacing: 3px;
+  line-height: 53px;
+  color: $white;
+  font-weight: $bold;
+  font-family: $abril-fatface;
+
+  @media only screen and (max-width: 460px) {
+    font-size: 65px;
+  }
+
+  @media only screen and (max-width: 360px) {
+    font-size: 50px;
+  }
+}
+
+.additional-title-myriad {
+  font-size: 40px;
+  letter-spacing: 1px;
+  color: $black;
+  font-weight: $regular;
+  font-family: $myriad-pro;
+}
+
+.additional-title-abril {
+  font-size: 40px;
+  letter-spacing: 1px;
+  color: $black;
+  font-weight: $regular;
+  font-family: $abril-fatface;
+}
+
+.subtitle-one {
+  font-size: 18px;
+  letter-spacing: 0px;
+  line-height: 26px;
+  color: $black;
+  font-weight: $bold;
+  font-family: $aleo;
+}
+
+.text {
+  font-size: 17px;
+  letter-spacing: 0px;
+  line-height: 26px;
+  font-weight: $regular;
+  color: $light-gray;
+  font-family: $aleo;
+}
+
+.text-abril {
+  font-size: 17px;
+  letter-spacing: 1px;
+  line-height: 26px;
+  color: $light-gray;
+  font-weight: $regular;
+  font-family: $abril-fatface;
+}
+
+.subtitle-two {
+  font-size: 24px;
+  letter-spacing: 1px;
+  line-height: 32px;
+  color: $black;
+  font-weight: $light;
+  font-family: $aleo;
+}
+
+.number {
+  font-size: 45px;
+  letter-spacing: 1px;
+  line-height: 32px;
+  color: $black;
+  font-weight: $bold;
+  font-family: $abril-fatface;
+}
+
+.btn-white,
+.btn-black {
+  letter-spacing: 1px;
+  font-family: $aleo;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.btn-black {
+  padding: 15px 41px;
+  font-size: 13px;
+  color: $white;
+  font-weight: $bold;
+  background-color: $black;
+
+  &:hover {
+    background-color: $white;
+    color: $black;
+    border: 1px solid $light-gray;
+  }
+}
+
+.btn-white {
+  padding: 11px 49px;
+  font-size: 12px;
+  color: $black;
+  background-color: $white;
+  border: 1px solid $light-gray;
+  font-weight: $light;
+
+  &:hover {
+    background-color: $black;
+    color: $white;
+  }
+}

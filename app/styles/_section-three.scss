@@ -1,0 +1,130 @@
+@import "_vars";
+
+.easy-purchase {
+  padding: 90px 0;
+  background-color: $gray-two;
+
+  &__title-wrap {
+    margin-bottom: 52px;
+  }
+
+  &__title {
+    max-width: 475px;
+    font-weight: $bold;
+    line-height: 47px;
+    letter-spacing: 2px;
+  }
+
+  &__icon {
+    width: 40px;
+    height: 36px;
+    display: flex;
+    font-size: 25px;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+  }
+
+  .indent {
+    display: inline-block;
+    height: 45px;
+    text-indent: 35px;
+    vertical-align: top;
+  }
+
+  &__offers {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  &__offers-content {
+    max-width: 290px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 105px;
+    margin-bottom: 77px;
+
+    &:nth-child(3) {
+      margin-right: 0;
+    }
+    &:nth-child(6) {
+      margin-right: 0;
+      margin-bottom: 0;
+    }
+    &:nth-child(4) {
+      margin-bottom: 0;
+    }
+    &:nth-child(5) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__content {
+    max-width: 240px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .easy-purchase {
+    &__offers {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    &__offers-content {
+      margin-right: 0px;
+      &:nth-child(3) {
+        margin-right: 0;
+        margin-bottom: 77px;
+      }
+      &:nth-child(6) {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 769px) {
+  .easy-purchase {
+    &__title {
+      font-size: 35px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .indent {
+      text-indent: 0;
+    }
+
+    &__offers {
+      justify-content: center;
+    }
+
+    &__offers-content {
+      &:nth-child(4),
+      &:nth-child(5),
+      &:nth-child(6) {
+        margin-bottom: 77px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 410px) {
+  .easy-purchase {
+    &__title {
+      font-size: 30px;
+    }
+  }
+}
+
+@media only screen and (max-width: 362px) {
+  .easy-purchase {
+    &__title {
+      font-size: 25px;
+    }
+  }
+}
