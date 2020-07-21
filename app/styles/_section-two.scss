@@ -3,10 +3,6 @@
 .section-question {
   padding: 100px 0;
 
-  .image {
-    opacity: 0.5;
-  }
-
   .image-wrap {
     max-width: 488px;
     max-height: 400px;
@@ -20,21 +16,25 @@
   &__title {
     max-width: 180px;
     position: absolute;
-    top: 103px;
-    right: -64px;
+    top: 107px;
+    right: -65px;
 
     text-align: center;
   }
 
+  &__options {
+    padding-left: 75px;
+  }
+
   &__option {
-    margin-bottom: 35px;
+    margin-bottom: 39px;
     &:last-child {
       margin: 0;
     }
   }
 
   &__option-title {
-    margin-bottom: 19px;
+    margin-bottom: 16px;
   }
 }
 
@@ -43,6 +43,10 @@
     .image-wrap {
       margin: 0 auto;
       margin-bottom: 45px;
+    }
+
+    &__options {
+      padding: 0;
     }
 
     &__option {

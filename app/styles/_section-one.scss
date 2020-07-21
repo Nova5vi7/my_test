@@ -25,13 +25,26 @@
   .image-wrap {
     min-height: 650px;
     width: 100%;
-    background-image: url(../images/1920px-Surrey_bc.jpg);
-    background-repeat: no-repeat;
     position: absolute;
   }
 
+  .slide-one {
+    background-image: url(../images/main-image.jpg);
+    background-repeat: no-repeat;
+  }
+
+  .slide-two {
+    background-image: url(../images/daniam-chou-NAr8kzLYWsw-unsplash.jpg);
+    background-repeat: no-repeat;
+  }
+
+  .slide-three {
+    background-image: url(../images/dan-meyers-tShyWwTihEw-unsplash.jpg);
+    background-repeat: no-repeat;
+  }
+
   &__title {
-    margin-bottom: 52px;
+    margin-bottom: 46px;
   }
 
   &__title,
@@ -44,7 +57,7 @@
 
   .slick-dots {
     position: absolute;
-    bottom: 22px;
+    bottom: 16px;
     right: 50%;
     transform: translateX(50%);
     padding: 0;

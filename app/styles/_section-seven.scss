@@ -1,13 +1,15 @@
 @import "_vars";
 
 .section-apply {
-  padding: 90px 0 0;
   background-color: $gray-two;
   position: relative;
-  min-height: calc(100vh - 143px);
   display: flex;
   align-items: center;
   border-bottom: 1px solid $light-gray;
+
+  &__wrap {
+    padding: 170px 0 185px;
+  }
 
   &__content {
     height: 100%;
@@ -22,23 +24,23 @@
 
   &__title {
     font-size: 41px;
-    font-weight: $bold;
-    line-height: 49px;
+    line-height: 48px;
     margin-bottom: 13px;
+    letter-spacing: 0.4px;
   }
 
   &__text {
-    margin-bottom: 25px;
-    font-size: 16px;
+    margin-bottom: 31px;
+    font-size: 18px;
     letter-spacing: 2px;
-    font-family: $roboto;
+    // text-indent: 1px;
   }
 
   &__image-wrap {
     position: absolute;
     width: 50%;
     height: 100%;
-    background-image: url(../images/dan-meyers-tShyWwTihEw-unsplash.jpg);
+    background-image: url(../images/image-seven.png);
     background-size: cover;
     background-repeat: no-repeat;
     right: 0;

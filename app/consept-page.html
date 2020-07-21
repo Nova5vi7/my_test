@@ -11,6 +11,22 @@
     <link rel="stylesheet" href="styles/main.css" />
   </head>
   <body>
+    <div class="vertical-menu" id="navigation-menu">
+      <div class="wrap">
+        <div class="vertical-menu__link-btn-off">
+          <a class="btn-nav-off" id="btn-nav-off"><i class="icon-close"></i></a>
+        </div>
+        <div class="vertical-menu__content-wrap">
+          <div class="vertical-menu__content">
+            <a href="#" class="vertical-menu__link subtitle-one">Home</a>
+            <a href="#" class="vertical-menu__link subtitle-one">Basket</a>
+            <a href="#" class="vertical-menu__link subtitle-one exit">Exit</a>
+          </div>
+        </div>
+      </div>
+      <div class="menu-overlay" id="menu-overlay"></div>
+    </div>
+
     <header class="header">
       <div class="container">
         <div class="header__wrap">
@@ -21,7 +37,7 @@
           <div class="header__nav">
             <div class="header__search"><i class="icon-search"></i></div>
             <div class="header__menu-wrap">
-              <a href="#" class="header__menu header-nav">MENU</a>
+              <a id="menu" class="header__menu header-nav">MENU</a>
             </div>
             <div class="header__basket-wrap">
               <a href="#" class="header__basket header-nav"
@@ -53,7 +69,7 @@
         <div class="section-launching__slider-wrap">
           <div>
             <div class="section-launching__wrap">
-              <div class="image-wrap"></div>
+              <div class="image-wrap slide-one"></div>
               <div class="container">
                 <div class="section-launching__content-wrap">
                   <h1 class="section-launching__title main-title">
@@ -71,7 +87,7 @@
           <!--  -->
           <div>
             <div class="section-launching__wrap">
-              <div class="image-wrap"></div>
+              <div class="image-wrap slide-two"></div>
               <div class="container">
                 <div class="section-launching__content-wrap">
                   <h1 class="section-launching__title main-title">
@@ -89,7 +105,7 @@
           <!--  -->
           <div>
             <div class="section-launching__wrap">
-              <div class="image-wrap"></div>
+              <div class="image-wrap slide-three"></div>
               <div class="container">
                 <div class="section-launching__content-wrap">
                   <h1 class="section-launching__title main-title">
@@ -113,11 +129,7 @@
         <div class="row">
           <div class="col-xl-7 col-lg-12">
             <div class="image-wrap">
-              <img
-                src="./images/488px-Bluegill_Warrior_full-art.jpg"
-                alt=""
-                class="image"
-              />
+              <img src="./images/image-two.jpg" alt="" class="image" />
               <h3 class="section-question__title additional-title-myriad">
                 Why use Test
               </h3>
@@ -129,32 +141,32 @@
                 <h3 class="section-question__option-title subtitle-one">
                   Tableware
                 </h3>
-                <div class="section-question__option-text text">
+                <p class="section-question__option-text text">
                   Browse exciting products from a selection of quality makers,
                   all in one place.
-                </div>
+                </p>
               </div>
 
               <div class="section-question__option">
                 <h3 class="section-question__option-title subtitle-one">
                   Products Just For You
                 </h3>
-                <div class="section-question__option-text text">
+                <p class="section-question__option-text text">
                   Our technology will do all the hard work & recommend products
                   that fit well with your customer profile, based on what your
                   competition is doing.
-                </div>
+                </p>
               </div>
 
               <div class="section-question__option">
                 <h3 class="section-question__option-title subtitle-one">
                   Test It In Your Store
                 </h3>
-                <div class="section-question__option-text text">
+                <p class="section-question__option-text text">
                   Our test & return feature will make it easy for you to find
                   that bestseller, delight your customers & keep them coming
                   back for more.
-                </div>
+                </p>
               </div>
             </div>
           </div>
@@ -166,13 +178,14 @@
       <div class="container">
         <div class="easy-purchase__title-wrap">
           <h3 class="easy-purchase__title additional-title-abril">
-            Buying for your store
-            <span class="indent">has never been easier</span>
+            Buying for your store has never been easier
           </h3>
         </div>
         <div class="easy-purchase__offers">
           <div class="easy-purchase__offers-content">
-            <div class="easy-purchase__icon"><i class="icon-search"></i></div>
+            <div class="easy-purchase__icon item-one">
+              <i class="icon-one"></i>
+            </div>
             <div class="easy-purchase__content">
               <h4 class="easy-purchase__subtitle subtitle-one">
                 Free For Retailers
@@ -184,7 +197,9 @@
           </div>
 
           <div class="easy-purchase__offers-content">
-            <div class="easy-purchase__icon"><i class="icon-search"></i></div>
+            <div class="easy-purchase__icon item-two">
+              <i class="icon-two"></i>
+            </div>
             <div class="easy-purchase__content">
               <h4 class="easy-purchase__subtitle subtitle-one">
                 Maker Stories & Reviews
@@ -197,7 +212,7 @@
           </div>
 
           <div class="easy-purchase__offers-content">
-            <div class="easy-purchase__icon"><i class="icon-search"></i></div>
+            <div class="easy-purchase__icon"><i class="icon-three"></i></div>
             <div class="easy-purchase__content">
               <h4 class="easy-purchase__subtitle subtitle-one">
                 Easy Returns
@@ -208,7 +223,9 @@
             </div>
           </div>
           <div class="easy-purchase__offers-content">
-            <div class="easy-purchase__icon"><i class="icon-search"></i></div>
+            <div class="easy-purchase__icon item-four">
+              <i class="icon-four"></i>
+            </div>
             <div class="easy-purchase__content">
               <h4 class="easy-purchase__subtitle subtitle-one">
                 Sector Trends
@@ -219,7 +236,9 @@
             </div>
           </div>
           <div class="easy-purchase__offers-content">
-            <div class="easy-purchase__icon"><i class="icon-search"></i></div>
+            <div class="easy-purchase__icon item-five">
+              <i class="icon-five"></i>
+            </div>
             <div class="easy-purchase__content">
               <h4 class="easy-purchase__subtitle subtitle-one">
                 Low Minimums
@@ -230,7 +249,9 @@
             </div>
           </div>
           <div class="easy-purchase__offers-content">
-            <div class="easy-purchase__icon"><i class="icon-search"></i></div>
+            <div class="easy-purchase__icon item-six">
+              <i class="icon-six"></i>
+            </div>
             <div class="easy-purchase__content">
               <h4 class="easy-purchase__subtitle subtitle-one">
                 Unique Products
@@ -248,12 +269,12 @@
       <div class="container">
         <div class="test-work__title-wrap">
           <h3 class="test-work__title additional-title-myriad">
-            How Test Works
+            How Test works
           </h3>
         </div>
         <div class="test-work__content">
           <div class="test-work__point">
-            <div class="test-work__numbers-wrap">
+            <div class="test-work__numbers-wrap number-one">
               <h3 class="test-work__number number">01</h3>
             </div>
             <div class="test-work__content-wrap">
@@ -267,7 +288,7 @@
             </div>
           </div>
           <div class="test-work__point">
-            <div class="test-work__numbers-wrap">
+            <div class="test-work__numbers-wrap number-two">
               <h3 class="test-work__number number">02</h3>
             </div>
             <div class="test-work__content-wrap">
@@ -281,7 +302,7 @@
             </div>
           </div>
           <div class="test-work__point">
-            <div class="test-work__numbers-wrap">
+            <div class="test-work__numbers-wrap number-three">
               <h3 class="test-work__number number">03</h3>
             </div>
             <div class="test-work__content-wrap">
@@ -301,35 +322,38 @@
     <div class="section-about">
       <div class="section-about__wrap">
         <div class="section-about__image-one">
-          <img src="./images/daniam-chou-NAr8kzLYWsw-unsplash.jpg" alt="" />
+          <img src="./images/image-three.jpg" alt="" />
         </div>
         <div class="section-about__content">
           <h2 class="section-about__title subtitle-two">About Us</h2>
           <h3 class="section-about__subtitle additional-title-abril">
             We believe that small can be big
           </h3>
-          <p class="section-about__text text-abril">
+          <p class="section-about__text-one text">
             Sparkinity was born because we believe in innovation. Data shows
             that small stores are better positioned than ever to take on retail
             giants as consumers increasingly seek curation and a personalised
             touch. Agility is a powerful weapon and we seek to empower the
-            agile. ​But to fulfil our vision we need to disrupt the age old
-            system of distribution & wholesale. Our founding team has personal
-            experiences & understanding of the expenses incurred , time and
-            incredible effort that both buyers & makers make to connect. All
-            because of the need to get a physical glimpse of that unicorn called
-            the bestseller before risking an order. ​We are changing the buying
-            process by providing retailers a medium to order online with free
-            returns. Makers save on huge upfront costs for creating distribution
-            networks & store owners can easily let their customers decide
-            without taking on the risks involved with buying decisions.
+            agile.
+          </p>
+          <p class="section-about__text text">
+            ​But to fulfil our vision we need to disrupt the age old system of
+            distribution & wholesale. Our founding team has personal experiences
+            & understanding of the expenses incurred , time and incredible
+            effort that both buyers & makers make to connect. All because of the
+            need to get a physical glimpse of that unicorn called the bestseller
+            before risking an order.
+          </p>
+          <p class="section-about__text text">
+            ​We are changing the buying process by providing retailers a medium
+            to order online with free returns. Makers save on huge upfront costs
+            for creating distribution networks & store owners can easily let
+            their customers decide without taking on the risks involved with
+            buying decisions.
           </p>
         </div>
         <div class="section-about__image-two">
-          <img
-            src="./images/alexandr-bormotin-oKJbqg2doKw-unsplash.jpg"
-            alt=""
-          />
+          <img src="./images/image-four.jpg" alt="" />
         </div>
       </div>
     </div>
@@ -345,7 +369,7 @@
           <div>
             <div class="section-comment__card">
               <div class="section-comment__avatar">
-                <img src="./images/image-team-three.png" alt="" />
+                <img src="./images/user-one.png" alt="" />
               </div>
               <div class="section-comment__card-content">
                 <h6 class="section-comment__name subtitle-one">Joanna Booth</h6>
@@ -359,7 +383,7 @@
                   Owner of Space London
                 </p>
                 <div class="section-comment__imag">
-                  <i class="icon-search"></i>
+                  <img src="./images/quotes.svg" alt="" />
                   <!-- <img src="" alt=""> -->
                 </div>
               </div>
@@ -369,7 +393,7 @@
           <div>
             <div class="section-comment__card">
               <div class="section-comment__avatar">
-                <img src="./images/image-team-three.png" alt="" />
+                <img src="./images/user-two.png" alt="" />
               </div>
               <div class="section-comment__card-content">
                 <h6 class="section-comment__name subtitle-one">Ryan Finer</h6>
@@ -384,17 +408,16 @@
                   Owner of Workshop
                 </p>
                 <div class="section-comment__imag">
-                  <i class="icon-search"></i>
-                  <!-- <img src="" alt=""> -->
+                  <img src="./images/quotes.svg" alt="" />
                 </div>
               </div>
             </div>
           </div>
           <!--  -->
           <div>
-            <div class="section-comment__card">
+            <div class="section-comment__card margin-non">
               <div class="section-comment__avatar">
-                <img src="./images/image-team-three.png" alt="" />
+                <img src="./images/user-three.png" alt="" />
               </div>
               <div class="section-comment__card-content">
                 <h6 class="section-comment__name subtitle-one">Chloe Smith</h6>
@@ -408,8 +431,7 @@
                   Maker of ceramics
                 </p>
                 <div class="section-comment__imag">
-                  <i class="icon-search"></i>
-                  <!-- <img src="" alt=""> -->
+                  <img src="./images/quotes.svg" alt="" />
                 </div>
               </div>
             </div>
@@ -417,7 +439,7 @@
           <div>
             <div class="section-comment__card">
               <div class="section-comment__avatar">
-                <img src="./images/image-team-three.png" alt="" />
+                <img src="./images/user-one.png" alt="" />
               </div>
               <div class="section-comment__card-content">
                 <h6 class="section-comment__name subtitle-one">Joanna Booth</h6>
@@ -431,8 +453,7 @@
                   Owner of Space London
                 </p>
                 <div class="section-comment__imag">
-                  <i class="icon-search"></i>
-                  <!-- <img src="" alt=""> -->
+                  <img src="./images/quotes.svg" alt="" />
                 </div>
               </div>
             </div>
@@ -441,7 +462,7 @@
           <div>
             <div class="section-comment__card">
               <div class="section-comment__avatar">
-                <img src="./images/image-team-three.png" alt="" />
+                <img src="./images/user-two.png" alt="" />
               </div>
               <div class="section-comment__card-content">
                 <h6 class="section-comment__name subtitle-one">Ryan Finer</h6>
@@ -456,17 +477,16 @@
                   Owner of Workshop
                 </p>
                 <div class="section-comment__imag">
-                  <i class="icon-search"></i>
-                  <!-- <img src="" alt=""> -->
+                  <img src="./images/quotes.svg" alt="" />
                 </div>
               </div>
             </div>
           </div>
           <!--  -->
           <div>
-            <div class="section-comment__card">
+            <div class="section-comment__card margin-non">
               <div class="section-comment__avatar">
-                <img src="./images/image-team-three.png" alt="" />
+                <img src="./images/user-three.png" alt="" />
               </div>
               <div class="section-comment__card-content">
                 <h6 class="section-comment__name subtitle-one">Chloe Smith</h6>
@@ -480,8 +500,7 @@
                   Maker of ceramics
                 </p>
                 <div class="section-comment__imag">
-                  <i class="icon-search"></i>
-                  <!-- <img src="" alt=""> -->
+                  <img src="./images/quotes.svg" alt="" />
                 </div>
               </div>
             </div>
@@ -499,7 +518,7 @@
                 <h3 class="section-apply__title additional-title-abril">
                   Apply to join the community
                 </h3>
-                <p class="section-apply__text text-abril">
+                <p class="section-apply__text text">
                   We are here to make a difference ! So whether you are a
                   talented Maker or a Retailer drop us a line to join our
                   platform. We would love to hear from you

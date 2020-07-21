@@ -30,7 +30,6 @@ body {
 }
 
 .header-nav-hover,
-.header-nav,
 .contact-nav {
   font-size: 12px;
   letter-spacing: 0px;
@@ -41,6 +40,7 @@ body {
 }
 
 .header-nav {
+  font-size: 13px;
   line-height: 15px;
   color: $black;
   font-weight: $light;
@@ -70,25 +70,30 @@ body {
 }
 
 .main-title {
-  font-size: 85px;
-  letter-spacing: 3px;
-  line-height: 53px;
+  font-size: 77px;
+  letter-spacing: 4.5px;
+  line-height: 70px;
   color: $white;
-  font-weight: $bold;
+  font-weight: $regular;
   font-family: $abril-fatface;
 
   @media only screen and (max-width: 460px) {
     font-size: 65px;
   }
 
-  @media only screen and (max-width: 360px) {
+  @media only screen and (max-width: 400px) {
     font-size: 50px;
+  }
+
+  @media only screen and (max-width: 330px) {
+    font-size: 45px;
   }
 }
 
 .additional-title-myriad {
   font-size: 40px;
   letter-spacing: 1px;
+  line-height: 49px;
   color: $black;
   font-weight: $regular;
   font-family: $myriad-pro;
@@ -97,6 +102,7 @@ body {
 .additional-title-abril {
   font-size: 40px;
   letter-spacing: 1px;
+  line-height: 49px;
   color: $black;
   font-weight: $regular;
   font-family: $abril-fatface;
@@ -104,7 +110,7 @@ body {
 
 .subtitle-one {
   font-size: 18px;
-  letter-spacing: 0px;
+  letter-spacing: 0.2px;
   line-height: 26px;
   color: $black;
   font-weight: $bold;
@@ -112,22 +118,23 @@ body {
 }
 
 .text {
-  font-size: 17px;
+  font-size: 16.8px;
   letter-spacing: 0px;
-  line-height: 26px;
-  font-weight: $regular;
+  line-height: 25px;
+  font-weight: $light;
   color: $light-gray;
-  font-family: $aleo;
+  font-family: $roboto;
+  word-spacing: -0.2px;
 }
 
-.text-abril {
-  font-size: 17px;
-  letter-spacing: 1px;
-  line-height: 26px;
-  color: $light-gray;
-  font-weight: $regular;
-  font-family: $abril-fatface;
-}
+// .text-abril {
+//   font-size: 17px;
+//   letter-spacing: 1px;
+//   line-height: 26px;
+//   color: $light-gray;
+//   font-weight: $regular;
+//   font-family: $abril-fatface;
+// }
 
 .subtitle-two {
   font-size: 24px;
@@ -139,11 +146,11 @@ body {
 }
 
 .number {
-  font-size: 45px;
+  font-size: 40px;
   letter-spacing: 1px;
   line-height: 32px;
   color: $black;
-  font-weight: $bold;
+  font-weight: $regular;
   font-family: $abril-fatface;
 }
 
@@ -156,8 +163,9 @@ body {
 }
 
 .btn-black {
-  padding: 15px 41px;
+  padding: 15px 40px 15px 40px;
   font-size: 13px;
+  letter-spacing: 1.2px;
   color: $white;
   font-weight: $bold;
   background-color: $black;

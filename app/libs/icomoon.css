@@ -34,3 +34,24 @@
 .icon-search:before {
   content: "\e902";
 }
+.icon-close:before {
+  content: "\e908";
+}
+.icon-one:before {
+  content: "\e904";
+}
+.icon-three:before {
+  content: "\e905";
+}
+.icon-four:before {
+  content: "\e906";
+}
+.icon-five:before {
+  content: "\e907";
+}
+.icon-two:before {
+  content: "\e90e";
+}
+.icon-six:before {
+  content: "\e903";
+}

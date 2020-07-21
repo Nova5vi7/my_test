@@ -33,3 +33,21 @@ $(".section-comment .section-comment__slider-wrap").slick({
     },
   ],
 });
+
+const navigationButton = document.getElementById("menu");
+const navigationMenu = document.getElementById("navigation-menu");
+const navigationButtonOff = document.getElementById("btn-nav-off");
+const menuOverlay = document.getElementById("menu-overlay");
+
+function menuToggleListener(target, navigationMenu, overlay) {
+  target.addEventListener("click", () => {
+    navigationMenu.classList.toggle("active");
+    overlay.classList.toggle("active");
+    document.body.classList.toggle("overflow-hidden");
+  });
+}
+if (navigationMenu) {
+  menuToggleListener(navigationButton, navigationMenu, menuOverlay);
+  menuToggleListener(navigationButtonOff, navigationMenu, menuOverlay);
+  menuToggleListener(menuOverlay, navigationMenu, menuOverlay);
+}
