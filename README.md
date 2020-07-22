@@ -4,7 +4,7 @@ npm install
 
 Компиляция и минимизация для производства:
 
-npm run duild
+npm run build
 
 Запуск проекта:
 
