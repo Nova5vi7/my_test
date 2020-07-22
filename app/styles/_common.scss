@@ -9,3 +9,122 @@ h6,
 p {
   margin: 0;
 }
+
+body {
+  * {
+    outline: none !important;
+  }
+}
+
+.logo {
+  font: normal $bold 36px/48px $myriad-pro;
+  letter-spacing: 2px;
+  color: $black;
+  transition: all 0.3s ease;
+  &:hover {
+    color: $light-gray;
+  }
+}
+
+.header-nav {
+  font: normal $light 13px/15px $aleo;
+  color: $black;
+  text-align: right;
+}
+
+.footer-nav {
+  font: normal $light 14px/27px $light;
+  color: $light-gray;
+}
+
+.main-title {
+  font: normal $regular 77px/70px $abril-fatface;
+  letter-spacing: 4.5px;
+  color: $white;
+
+  @media only screen and (max-width: 460px) {
+    font-size: 65px;
+  }
+
+  @media only screen and (max-width: 400px) {
+    font-size: 50px;
+  }
+
+  @media only screen and (max-width: 330px) {
+    font-size: 45px;
+  }
+}
+
+.additional-title-myriad {
+  font: normal $regular 40px/49px $myriad-pro;
+  letter-spacing: 1px;
+  color: $black;
+}
+
+.additional-title-abril {
+  font: normal $regular 40px/49px $abril-fatface;
+  letter-spacing: 1px;
+  color: $black;
+}
+
+.subtitle-one {
+  font: normal $bold 18px/26px $aleo;
+  letter-spacing: 0.2px;
+  color: $black;
+}
+
+.text {
+  font: normal $light 16.8px/25px $roboto;
+  letter-spacing: 0px;
+  color: $light-gray;
+  word-spacing: -0.2px;
+}
+
+.subtitle-two {
+  font: normal $light 24px/32px $aleo;
+  letter-spacing: 1px;
+  color: $black;
+}
+
+.number {
+  font: normal $regular 40px/32px $abril-fatface;
+  letter-spacing: 1px;
+  color: $black;
+}
+
+.btn-white,
+.btn-black {
+  transition: all 0.3s ease;
+}
+
+.btn-black {
+  font: normal $bold 13px/1.7 $aleo;
+  padding: 15px 40px 15px 40px;
+  letter-spacing: 1.2px;
+  color: $white;
+  background-color: $black;
+  border: 1px solid $light-gray;
+
+  &:hover {
+    background-color: $white;
+    color: $black;
+  }
+}
+
+.btn-white {
+  font: normal $light 12px/1.5 $aleo;
+  padding: 11px 49px;
+  letter-spacing: 1px;
+  color: $black;
+  background-color: $white;
+  border: 1px solid $light-gray;
+
+  &:hover {
+    background-color: $black;
+    color: $white;
+  }
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}

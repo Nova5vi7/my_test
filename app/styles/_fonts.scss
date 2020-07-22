@@ -3,5 +3,22 @@
 // @include  - команда использования миксина
 // font-face - название миксина
 // в скобках (название шрифта, путь к шрифту, font-weight)
+// @include font-face("", "", );
 
-// @include font-face("Inter", "../fonts/inter-bold/Inter-Bold", bold);
+@include font-face("Roboto", "../fonts/roboto-regular/Roboto-Regular");
+@include font-face("Roboto", "../fonts/roboto-light/Roboto-Light", 300);
+@include font-face(
+  "Myriad Pro",
+  "../fonts/myriadpro-regular/MyriadPro-Regular"
+);
+@include font-face(
+  "Myriad Pro",
+  "../fonts/myriadpro-bold/MyriadPro-Bold",
+  bold
+);
+@include font-face("Aleo", "../fonts/aleo-light/Aleo-Light", 300);
+@include font-face("Aleo", "../fonts/aleo-bold/Aleo-Bold", bold);
+@include font-face(
+  "AbrilFatface",
+  "../fonts/abrilfatface-regular/AbrilFatface-Regular"
+);
