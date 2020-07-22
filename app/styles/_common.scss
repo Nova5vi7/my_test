@@ -17,65 +17,30 @@ body {
 }
 
 .logo {
-  font-size: 36px;
+  font: normal $bold 36px/48px $myriad-pro;
   letter-spacing: 2px;
-  line-height: 48px;
   color: $black;
-  font-weight: $bold;
-  font-family: $myriad-pro;
   transition: all 0.3s ease;
   &:hover {
     color: $light-gray;
   }
 }
 
-.header-nav-hover,
-.contact-nav {
-  font-size: 12px;
-  letter-spacing: 0px;
-}
-.header-nav-hover,
 .header-nav {
+  font: normal $light 13px/15px $aleo;
+  color: $black;
   text-align: right;
 }
 
-.header-nav {
-  font-size: 13px;
-  line-height: 15px;
-  color: $black;
-  font-weight: $light;
-  font-family: $aleo;
-}
-
-.header-nav-hover {
-  line-height: 30px;
-  color: $black;
-  font-weight: $regular;
-  font-family: $roboto;
-}
-
-.contact-nav {
-  line-height: 15px;
-  color: $black;
-  font-weight: $light;
-  font-family: $aleo;
-}
-
 .footer-nav {
-  font-size: 14px;
-  line-height: 27px;
+  font: normal $light 14px/27px $light;
   color: $light-gray;
-  font-weight: $light;
-  font-family: $roboto;
 }
 
 .main-title {
-  font-size: 77px;
+  font: normal $regular 77px/70px $abril-fatface;
   letter-spacing: 4.5px;
-  line-height: 70px;
   color: $white;
-  font-weight: $regular;
-  font-family: $abril-fatface;
 
   @media only screen and (max-width: 460px) {
     font-size: 65px;
@@ -91,102 +56,75 @@ body {
 }
 
 .additional-title-myriad {
-  font-size: 40px;
+  font: normal $regular 40px/49px $myriad-pro;
   letter-spacing: 1px;
-  line-height: 49px;
   color: $black;
-  font-weight: $regular;
-  font-family: $myriad-pro;
 }
 
 .additional-title-abril {
-  font-size: 40px;
+  font: normal $regular 40px/49px $abril-fatface;
   letter-spacing: 1px;
-  line-height: 49px;
   color: $black;
-  font-weight: $regular;
-  font-family: $abril-fatface;
 }
 
 .subtitle-one {
-  font-size: 18px;
+  font: normal $bold 18px/26px $aleo;
   letter-spacing: 0.2px;
-  line-height: 26px;
   color: $black;
-  font-weight: $bold;
-  font-family: $aleo;
 }
 
 .text {
-  font-size: 16.8px;
+  font: normal $light 16.8px/25px $roboto;
   letter-spacing: 0px;
-  line-height: 25px;
-  font-weight: $light;
   color: $light-gray;
-  font-family: $roboto;
   word-spacing: -0.2px;
 }
 
-// .text-abril {
-//   font-size: 17px;
-//   letter-spacing: 1px;
-//   line-height: 26px;
-//   color: $light-gray;
-//   font-weight: $regular;
-//   font-family: $abril-fatface;
-// }
-
 .subtitle-two {
-  font-size: 24px;
+  font: normal $light 24px/32px $aleo;
   letter-spacing: 1px;
-  line-height: 32px;
   color: $black;
-  font-weight: $light;
-  font-family: $aleo;
 }
 
 .number {
-  font-size: 40px;
+  font: normal $regular 40px/32px $abril-fatface;
   letter-spacing: 1px;
-  line-height: 32px;
   color: $black;
-  font-weight: $regular;
-  font-family: $abril-fatface;
 }
 
 .btn-white,
 .btn-black {
-  letter-spacing: 1px;
-  font-family: $aleo;
-  border: none;
   transition: all 0.3s ease;
 }
 
 .btn-black {
+  font: normal $bold 13px/1.7 $aleo;
   padding: 15px 40px 15px 40px;
-  font-size: 13px;
   letter-spacing: 1.2px;
   color: $white;
-  font-weight: $bold;
   background-color: $black;
+  border: 1px solid $light-gray;
 
   &:hover {
     background-color: $white;
     color: $black;
-    border: 1px solid $light-gray;
   }
 }
 
 .btn-white {
+  font: normal $light 12px/1.5 $aleo;
   padding: 11px 49px;
-  font-size: 12px;
+  letter-spacing: 1px;
   color: $black;
   background-color: $white;
   border: 1px solid $light-gray;
-  font-weight: $light;
 
   &:hover {
     background-color: $black;
     color: $white;
   }
+}
+
+.overflow-hidden {
+  overflow: hidden;
 }

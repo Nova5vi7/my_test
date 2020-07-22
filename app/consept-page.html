@@ -17,10 +17,38 @@
           <a class="btn-nav-off" id="btn-nav-off"><i class="icon-close"></i></a>
         </div>
         <div class="vertical-menu__content-wrap">
+          <div class="vertical-menu__user">
+            <h3 class="vertical-menu__user-name subtitle-one">Alex</h3>
+            <a href="#" class="vertical-menu__logout text">Logout</a>
+          </div>
           <div class="vertical-menu__content">
-            <a href="#" class="vertical-menu__link subtitle-one">Home</a>
-            <a href="#" class="vertical-menu__link subtitle-one">Basket</a>
-            <a href="#" class="vertical-menu__link subtitle-one exit">Exit</a>
+            <ul class="vertical-menu__links">
+              <li class="vertical-menu__link-item">
+                <a href="#" class="vertical-menu__link subtitle-one"
+                  >Contacts</a
+                >
+              </li>
+              <li class="vertical-menu__link-item">
+                <a href="#" class="vertical-menu__link subtitle-one"
+                  >About Us</a
+                >
+              </li>
+              <li class="vertical-menu__link-item">
+                <a href="#" class="vertical-menu__link subtitle-one exit"
+                  >Settings</a
+                >
+              </li>
+              <li class="vertical-menu__link-item">
+                <a href="#" class="vertical-menu__link subtitle-one exit"
+                  >Catalog</a
+                >
+              </li>
+              <li class="vertical-menu__link-item">
+                <a href="#" class="vertical-menu__link subtitle-one exit"
+                  >Settings</a
+                >
+              </li>
+            </ul>
           </div>
         </div>
       </div>
@@ -35,15 +63,40 @@
           </div>
 
           <div class="header__nav">
-            <div class="header__search"><i class="icon-search"></i></div>
-            <div class="header__menu-wrap">
-              <a id="menu" class="header__menu header-nav">MENU</a>
+            <div class="header__search-wrap">
+              <a href="#" class="header__search header-nav"
+                ><i class="icon-search"></i
+              ></a>
             </div>
+            <div class="header__menu-wrap">
+              <a href="#" class="header__menu header-nav">MENU</a>
+              <div class="dropdown">
+                <ul class="dropdown-content">
+                  <li>
+                    <a href="#" class="dropdown-link header-nav">Contacts</a>
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-link header-nav">About us</a>
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-link header-nav">Catalog</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
             <div class="header__basket-wrap">
               <a href="#" class="header__basket header-nav"
                 ><i class="icon-bag"></i>1</a
               >
             </div>
+
+            <div class="header__hamburger-wrap">
+              <a href="#" class="header__hamburger header-nav" id="menu"
+                ><i class="icon-hamburger"></i
+              ></a>
+            </div>
+
             <div class="header__user-wrap">
               <a href="#" class="header__user header-nav"
                 ><i class="icon-user"></i> ALEX</a
@@ -69,7 +122,10 @@
         <div class="section-launching__slider-wrap">
           <div>
             <div class="section-launching__wrap">
-              <div class="image-wrap slide-one"></div>
+              <div
+                class="image-wrap slide-one"
+                style="background-image: url(./images/main-image.jpg);"
+              ></div>
               <div class="container">
                 <div class="section-launching__content-wrap">
                   <h1 class="section-launching__title main-title">
@@ -87,7 +143,12 @@
           <!--  -->
           <div>
             <div class="section-launching__wrap">
-              <div class="image-wrap slide-two"></div>
+              <div
+                class="image-wrap slide-two"
+                style="
+                  background-image: url(./images/daniam-chou-NAr8kzLYWsw-unsplash.jpg);
+                "
+              ></div>
               <div class="container">
                 <div class="section-launching__content-wrap">
                   <h1 class="section-launching__title main-title">
@@ -105,7 +166,12 @@
           <!--  -->
           <div>
             <div class="section-launching__wrap">
-              <div class="image-wrap slide-three"></div>
+              <div
+                class="image-wrap slide-three"
+                style="
+                  background-image: url(./images/dan-meyers-tShyWwTihEw-unsplash.jpg);
+                "
+              ></div>
               <div class="container">
                 <div class="section-launching__content-wrap">
                   <h1 class="section-launching__title main-title">
@@ -415,7 +481,7 @@
           </div>
           <!--  -->
           <div>
-            <div class="section-comment__card margin-non">
+            <div class="section-comment__card">
               <div class="section-comment__avatar">
                 <img src="./images/user-three.png" alt="" />
               </div>
@@ -484,7 +550,7 @@
           </div>
           <!--  -->
           <div>
-            <div class="section-comment__card margin-non">
+            <div class="section-comment__card">
               <div class="section-comment__avatar">
                 <img src="./images/user-three.png" alt="" />
               </div>
@@ -512,7 +578,7 @@
     <div class="section-apply">
       <div class="container">
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-lg-6 col--12">
             <div class="section-apply__wrap">
               <div class="section-apply__content">
                 <h3 class="section-apply__title additional-title-abril">

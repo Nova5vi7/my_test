@@ -25,6 +25,10 @@
     padding: 0 32px 0 20px;
   }
 
+  &__hamburger {
+    padding: 0 20px 0 32px;
+  }
+
   &__menu-wrap {
     padding: 0 26px 0 20px;
   }
@@ -33,7 +37,8 @@
     padding: 0 10px 0 13px;
   }
 
-  &__search,
+  &__search-wrap,
+  &__hamburger-wrap,
   &__menu-wrap,
   &__basket-wrap,
   &__user-wrap,
@@ -46,8 +51,9 @@
     padding-bottom: 0;
   }
 
-  &__search,
+  &__search-wrap,
   &__menu-wrap,
+  &__hamburger-wrap,
   &__basket-wrap,
   &__user-wrap {
     height: 100%;
@@ -57,34 +63,17 @@
 
   &__search,
   &__basket,
+  &__hamburger,
   &__user,
   &__menu {
-    height: 100%;
     display: flex;
     align-items: center;
     transition: all 0.3s ease;
     &:hover {
-      color: $nav-hover;
+      color: $light-gray;
     }
     i {
       font-size: 18px;
-    }
-  }
-
-  &__menu {
-    cursor: pointer;
-    &:hover {
-      color: $nav-hover;
-    }
-  }
-
-  &__search,
-  &__basket,
-  &__user,
-  &__menu {
-    transition: all 0.3s ease;
-    &:hover {
-      color: $nav-hover;
     }
   }
 
@@ -95,11 +84,13 @@
     }
   }
 
-  &__user-wrap {
+  &__user-wrap,
+  &__menu-wrap {
     position: relative;
 
     &:hover {
       box-shadow: 1px -1px 2px rgba(0, 0, 0, 0.3);
+
       .dropdown {
         opacity: 1;
         visibility: visible;
@@ -149,14 +140,32 @@
     text-decoration: none;
     margin: 0;
   }
+
+  &__hamburger-wrap {
+    display: none;
+  }
+
+  &__hamburger {
+    i {
+      font-size: 25px;
+    }
+  }
 }
 
 @media only screen and (max-width: 768px) {
   .header {
     &__search,
-    &__basket-wrap,
+    &__hamburger {
+      padding: 0 20px;
+    }
+
+    &__menu-wrap,
     &__user-wrap {
       display: none;
+    }
+
+    &__hamburger-wrap {
+      display: flex;
     }
   }
 }

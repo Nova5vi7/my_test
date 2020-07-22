@@ -33,7 +33,6 @@
     margin-bottom: 31px;
     font-size: 18px;
     letter-spacing: 2px;
-    // text-indent: 1px;
   }
 
   &__image-wrap {
@@ -48,11 +47,15 @@
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 770px) {
   .section-apply {
     min-height: 100%;
     padding-bottom: 90px;
+  }
+}
 
+@media only screen and (max-width: 993px) {
+  .section-apply {
     &__image-wrap {
       display: none;
     }

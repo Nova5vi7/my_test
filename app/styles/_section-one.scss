@@ -1,7 +1,6 @@
 @import "_vars";
 
 .section-launching {
-  position: relative;
   width: 100%;
   display: flex;
   align-items: center;
@@ -29,18 +28,18 @@
   }
 
   .slide-one {
-    background-image: url(../images/main-image.jpg);
     background-repeat: no-repeat;
+    background-size: cover;
   }
 
   .slide-two {
-    background-image: url(../images/daniam-chou-NAr8kzLYWsw-unsplash.jpg);
     background-repeat: no-repeat;
+    background-size: cover;
   }
 
   .slide-three {
-    background-image: url(../images/dan-meyers-tShyWwTihEw-unsplash.jpg);
     background-repeat: no-repeat;
+    background-size: cover;
   }
 
   &__title {
@@ -50,9 +49,6 @@
   &__title,
   &__btn-wrap {
     text-align: center;
-  }
-  button {
-    border: none;
   }
 
   .slick-dots {
@@ -99,5 +95,9 @@
   ul {
     padding: 0;
     margin: 0;
+  }
+
+  button {
+    border: none;
   }
 }
