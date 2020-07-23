@@ -128,3 +128,61 @@ body {
 .overflow-hidden {
   overflow: hidden;
 }
+
+.scroll-nav {
+  position: fixed;
+  right: 20px;
+  z-index: 10;
+  top: 50%;
+}
+
+.container-links {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  right: 10px;
+  top: 30%;
+
+  &.light {
+    .scroll-nav-button {
+      color: $white;
+      &::after {
+        background-color: $white;
+      }
+    }
+  }
+
+  .scroll-nav-button {
+    position: relative;
+    border: none;
+    background-color: transparent;
+    color: $black;
+    font-size: 13px;
+    margin-bottom: 15px;
+    z-index: 100;
+    transition: all 0.3s ease;
+    &::after {
+      content: "";
+      width: 0px;
+      height: 1px;
+      position: absolute;
+      top: 50%;
+      right: 5px;
+      background-color: $black;
+      transition: all 0.3s ease;
+    }
+
+    &.active {
+      padding-right: 40px;
+
+      &::after {
+        width: 30px;
+      }
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
